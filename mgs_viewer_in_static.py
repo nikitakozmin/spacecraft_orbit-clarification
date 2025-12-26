@@ -222,7 +222,8 @@ class MainWindow(QMainWindow):
 # ============================================================
 
 def main():
-    pos, vel, mars_sun = load_geometry_data("./output_data/mgs_geometry.csv")
+    # pos, vel, mars_sun = load_geometry_data("./output_data/mgs_geometry.csv")
+    pos, vel, mars_sun = load_geometry_data("./output_data/doppler_results_integrated.csv")
 
     app = QApplication(sys.argv)
     fmt = QSurfaceFormat()
